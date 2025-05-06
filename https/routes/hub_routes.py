@@ -26,6 +26,7 @@ router = APIRouter()
                             "temperature": 25.0,
                             "humidity": 50.0,
                             "isMotionDetected": False,
+                            "gasLevel": 0,
                             "isGasDetected": True,
                             "timestamp": "2025-03-23T18:27:35.204931"
                         }
@@ -60,6 +61,7 @@ async def post_sensor_data(hub: str, sensor: Sensor):
                                 "temperature": 22.5,
                                 "humidity": 65.2,
                                 "isMotionDetected": False,
+                                "gasLevel": 0,
                                 "isGasDetected": False,
                                 "timestamp": "2025-03-23T14:07:17.870819"
                             },
@@ -67,6 +69,7 @@ async def post_sensor_data(hub: str, sensor: Sensor):
                                 "temperature": 25.0,
                                 "humidity": 60.0,
                                 "isMotionDetected": False,
+                                "gasLevel": 0,
                                 "isGasDetected": False,
                                 "timestamp": "2025-03-23T15:07:17.870819"
                             }
